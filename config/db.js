@@ -13,7 +13,8 @@ const connectDB = async () => {
       //To use the new Server Discover and Monitoring engine,
       //pass option { useUnifiedTopology: true } to the MongoClient
       //constructor. 
-      useUnifiedTopology: true
+      useUnifiedTopology: true,
+      useCreateIndex: true
     });
 
     console.log('MongoDB Connected...');
